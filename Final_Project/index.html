@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Navigational Interface</title>
+    <style>
+      body {
+        background-image: url("images/tropical-island.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+      }
+      #container {
+	width: 1020px;
+	margin: auto;
+	margin-top: 150px;
+      }
+      img {
+	float: left;
+	margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio autoplay loop="true">
+	<source src="sounds/goodtime.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound" src="sounds/hitsound.wav"></audio>
+    <button onclick="document.getElementById('sound').play();">Press Me!</button>
+    <div id="container">
+	<a href="Rotation/rotation.html"><img src="images/refresh.png" alt="Refresh" width="300" height="300"></a>
+	<a href="WebGL/webgl.html"><img src="images/octahedron.svg" alt="An octahedron" width="300" height="300"></a>
+	<a href="p5/pixels.html"><img src="images/p5.png" alt="p5 logo" width="300" height="300"></a> 
+    </div>
+  </body>
+</html>

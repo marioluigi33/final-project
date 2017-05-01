@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="UTF-8">
+	<title>Rotation Animation</title>
+	<style>
+		body {
+			background-image: url("images/swirltunnel.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		#box {
+			width: 680px;
+			margin: auto;
+			margin-top: 100px;
+		}
+		img {
+			float: left:
+			margin: 20px;
+		}
+		@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+		#swirl {
+			animation: rotation 1s infinite linear normal;
+		}
+		#compass {
+			animation: rotation 2s infinite linear normal;
+		}
+		#clock {
+			animation: rotation 4s infinite linear normal;
+		}
+		#yinyang {
+			animation: rotation 8s infinite linear normal;
+		}
+	</style>
+   </head>
+
+   <body>
+	<div id="box">
+		<img id="swirl" src="images/swirl.png" alt="A swirl" width="300" height="300">
+		<img id="compass" src="images/CompassRose.svg" alt="A compass rose" width="300" height="300">
+		<img id="clock" src="images/clock.png" alt="A clock" width="300" height="300">
+		<img id="yinyang" src="images/yinyang.png" alt="A yin-yang symbol" width="300" height="300">
+	</div>
+   </body>
+</html>
